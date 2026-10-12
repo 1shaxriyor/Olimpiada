@@ -1,10 +1,10 @@
 // Service Worker for Informatika Olimpiada Test PWA
 const CACHE_NAME = 'olimpiada-v1';
 const ASSETS_TO_CACHE = [
-  '/',
-  '/index.html',
-  '/manifest.json',
-  '/icon.svg'
+  '/Olimpiada/',
+  '/Olimpiada/index.html',
+  '/Olimpiada/manifest.json',
+  '/Olimpiada/icon.png'
 ];
 
 self.addEventListener('install', (event) => {
