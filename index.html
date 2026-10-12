@@ -24,21 +24,22 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
     <script>
-      // Immediately apply theme before render
       try {
         const savedTheme = localStorage.getItem('olimpiada_theme');
-        if (savedTheme === 'dark' || (!savedTheme && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-          document.documentElement.classList.add('dark');
-        } else {
+        // Default: dark mode
+        if (savedTheme === 'light') {
           document.documentElement.classList.remove('dark');
+        } else {
+          document.documentElement.classList.add('dark');
         }
-      } catch (e) {}
+      } catch (e) {
+        document.documentElement.classList.add('dark');
+      }
     </script>
-    <script type="module" crossorigin src="/Olimpiada/assets/index-B9v3bPnf.js"></script>
-    <link rel="stylesheet" crossorigin href="/Olimpiada/assets/index-DI8cBnHv.css">
+    <script type="module" crossorigin src="/Olimpiada/assets/index-BHF8qvM0.js"></script>
+    <link rel="stylesheet" crossorigin href="/Olimpiada/assets/index-BUEXIhvg.css">
   </head>
   <body class="bg-slate-50 dark:bg-slate-950 text-slate-900 dark:text-slate-100 antialiased selection:bg-blue-500 selection:text-white min-h-screen">
     <div id="root"></div>
   </body>
 </html>
-
